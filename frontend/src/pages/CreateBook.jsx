@@ -21,7 +21,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-      .post("http://localhost:5656/books", data)
+      .post("https://new-mern-stack-application.onrender.com/books", data)
       .then(() => {
         setLoading(false);
         navigate("/");
